@@ -1,3 +1,84 @@
+wayland (1.12.0-1~ubuntu16.04.2) xenial-security; urgency=medium
+
+  * No change rebuild in the -security pocket.
+
+ -- Marc Deslauriers <marc.deslauriers@ubuntu.com>  Wed, 11 Oct 2017 14:27:48 -0400
+
+wayland (1.12.0-1~ubuntu16.04.1) xenial; urgency=medium
+
+  * Backport to xenial. (LP: #1687981)
+    - use debhelper 9
+
+ -- Timo Aaltonen <tjaalton@debian.org>  Sat, 25 Mar 2017 12:33:25 +0200
+
+wayland (1.12.0-1) unstable; urgency=medium
+
+  * New upstream release. Closes: #840752.
+  * Update various links to https.
+  * Verify upstream tarball signatures. Thanks Hideki Yamane.
+  * Bump debhelper compat to 10.
+    + debhelper now calls dh-autoreconf by default.
+
+ -- Emilio Pozuelo Monfort <pochu@debian.org>  Wed, 07 Dec 2016 18:54:57 +0100
+
+wayland (1.11.94-1) experimental; urgency=medium
+
+  * New upstream pre-release.
+  * Standards-Version is 3.9.8, no changes needed.
+
+ -- Emilio Pozuelo Monfort <pochu@debian.org>  Wed, 14 Sep 2016 12:10:19 +0200
+
+wayland (1.11.91-1) experimental; urgency=medium
+
+  * New upstream pre-release
+
+ -- Héctor Orón Martínez <zumbi@debian.org>  Thu, 18 Aug 2016 17:18:52 +0200
+
+wayland (1.11.0-2) unstable; urgency=medium
+
+  * d/control: libwayland-dev depends on libwayland-bin
+  * d/control: libwayland-bin replaces libwayland-dev
+
+ -- Héctor Orón Martínez <zumbi@debian.org>  Mon, 06 Jun 2016 11:28:46 +0200
+
+wayland (1.11.0-1) unstable; urgency=medium
+
+  * New upstream release
+  * d/control: make libwayland-dev multiarch aware
+    - based on a patch from Dima Kogan.
+    (Closes: #739400)
+  * d/libwayland-client0.symbols: update with new symbols
+
+ -- Héctor Orón Martínez <zumbi@debian.org>  Thu, 02 Jun 2016 11:37:00 +0200
+
+wayland (1.10.0-2) unstable; urgency=medium
+
+  * Don't build the documentation on binary-arch only builds. Move the
+    build-dependencies needed for the documentation to build-depends-indep.
+    Closes: #821170.
+  * Move the manpages to libwayland-doc.
+  * Switch to dbgsym packages.
+
+ -- Emilio Pozuelo Monfort <pochu@debian.org>  Wed, 20 Apr 2016 21:38:58 +0200
+
+wayland (1.10.0-1) unstable; urgency=medium
+
+  * New upstream release
+
+ -- Héctor Orón Martínez <zumbi@debian.org>  Thu, 31 Mar 2016 13:13:12 +0200
+
+wayland (1.9.92-1) experimental; urgency=medium
+
+  * New upstream release, experimental upload.
+
+  [ Hideki Yamane ]
+  * debian/control
+    - add Build-Depends: libxml2-dev
+  * update debian/libwayland-{client,server}0.symbols
+  * update debian/watch (Closes: #813484)
+
+ -- Héctor Orón Martínez <zumbi@debian.org>  Thu, 04 Feb 2016 23:22:27 +0100
+
 wayland (1.9.0-1) unstable; urgency=medium
 
   * New upstream release
