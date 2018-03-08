@@ -1,3 +1,11 @@
+wayland (1.12.0-1~ubuntu16.04.3) xenial-security; urgency=medium
+
+  * SECURITY UPDATE: heap overflows when parsing malicious files
+    - debian/patches/CVE-2017-16612.patch: add checks to cursor/xcursor.c.
+    - CVE-2017-16612
+
+ -- Marc Deslauriers <marc.deslauriers@ubuntu.com>  Thu, 08 Mar 2018 12:22:08 +0100
+
 wayland (1.12.0-1~ubuntu16.04.2) xenial-security; urgency=medium
 
   * No change rebuild in the -security pocket.
